@@ -1,0 +1,102 @@
+[
+  {
+    "id": "bs-fresh-30",
+    "name": "Body Scent Fresh Eau de Perfume",
+    "mood": "fresh",
+    "type": "spray",
+    "size": "30ml",
+    "price": 89,
+    "image": "images/fresh.jpg",
+    "description": "กลิ่นหอมสะอาด สดชื่น ผสานความรู้สึกโปร่งสบายเหมือนสายลมยามเช้า เหมาะสำหรับวันสบายๆ และพกพาระหว่างวัน"
+  },
+  {
+    "id": "bs-fresh-100",
+    "name": "Body Scent Fresh Eau de Perfume",
+    "mood": "fresh",
+    "type": "spray",
+    "size": "100ml",
+    "price": 199,
+    "image": "images/fresh.jpg",
+    "description": "กลิ่นหอมสะอาด สดชื่น ผสานความรู้สึกโปร่งสบายเหมือนสายลมยามเช้า ขนาดคุ้มค่าสำหรับใช้เป็นประจำทุกวัน"
+  },
+  {
+    "id": "bs-sweet-30",
+    "name": "Body Scent Sweet Eau de Perfume",
+    "mood": "sweet",
+    "type": "spray",
+    "size": "30ml",
+    "price": 89,
+    "image": "images/sweet.jpg",
+    "description": "กลิ่นหอมละมุน อ่อนหวานอย่างมีระดับ ให้ความรู้สึกนุ่มนวล น่าทะนุถนอม ไม่เลี่ยนจนเกินไป ขนาดพกพาสะดวก"
+  },
+  {
+    "id": "bs-sweet-100",
+    "name": "Body Scent Sweet Eau de Perfume",
+    "mood": "sweet",
+    "type": "spray",
+    "size": "100ml",
+    "price": 199,
+    "image": "images/sweet.jpg",
+    "description": "กลิ่นหอมละมุน อ่อนหวานอย่างมีระดับ ให้ความรู้สึกนุ่มนวล น่าทะนุถนอม ไม่เลี่ยนจนเกินไป ขนาดใหญ่ใช้ได้ยาวนาน"
+  },
+  {
+    "id": "bs-confident-30",
+    "name": "Body Scent Confident Eau de Perfume",
+    "mood": "confident",
+    "type": "spray",
+    "size": "30ml",
+    "price": 89,
+    "image": "images/confident.jpg",
+    "description": "กลิ่นหอมสุขุม นุ่มลึก สะท้อนบุคลิกที่มั่นใจและน่าเชื่อถือ เหมาะสำหรับวันทำงานสำคัญหรือออกงานสังคม ขนาดพกพา"
+  },
+  {
+    "id": "bs-confident-100",
+    "name": "Body Scent Confident Eau de Perfume",
+    "mood": "confident",
+    "type": "spray",
+    "size": "100ml",
+    "price": 199,
+    "image": "images/confident.jpg",
+    "description": "กลิ่นหอมสุขุม นุ่มลึก สะท้อนบุคลิกที่มั่นใจและน่าเชื่อถือ เหมาะสำหรับวันทำงานสำคัญหรือออกงานสังคม ขนาดใหญ่"
+  },
+  {
+    "id": "bs-romance-30",
+    "name": "Body Scent Romance Eau de Perfume",
+    "mood": "romance",
+    "type": "spray",
+    "size": "30ml",
+    "price": 89,
+    "image": "images/romance.jpg",
+    "description": "กลิ่นหอมเย้ายวน อบอุ่น และมีเสน่ห์น่าค้นหา สร้างบรรยากาศสุดพิเศษในทุกช่วงเวลาสำคัญ ขนาดพกพา"
+  },
+  {
+    "id": "bs-romance-100",
+    "name": "Body Scent Romance Eau de Perfume",
+    "mood": "romance",
+    "type": "spray",
+    "size": "100ml",
+    "price": 199,
+    "image": "images/romance.jpg",
+    "description": "กลิ่นหอมเย้ายวน อบอุ่น และมีเสน่ห์น่าค้นหา สร้างบรรยากาศสุดพิเศษในทุกช่วงเวลาสำคัญ ขนาดใหญ่สุดคุ้ม"
+  },
+  {
+    "id": "bs-rollon-fresh",
+    "name": "Body Scent Fresh Deodorant Roll-On",
+    "mood": "fresh",
+    "type": "rollon",
+    "size": "50ml",
+    "price": 149,
+    "image": "images/fresh.jpg",
+    "description": "โรลออนระงับกลิ่นกายสูตรอ่อนโยน แห้งไว ไม่ทิ้งคราบ พร้อมมอบความหอมสะอาดสดชื่นยาวนานตลอดวัน"
+  },
+  {
+    "id": "bs-rollon-sweet",
+    "name": "Body Scent Sweet Deodorant Roll-On",
+    "mood": "sweet",
+    "type": "rollon",
+    "size": "50ml",
+    "price": 149,
+    "image": "images/sweet.jpg",
+    "description": "โรลออนระงับกลิ่นกายสูตรอ่อนโยน ปกป้องมั่นใจ พร้อมกลิ่นหอมหวานละมุนอย่างเป็นธรรมชาติตลอดทั้งวัน"
+  }
+]

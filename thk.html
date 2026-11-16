@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ขอบคุณสำหรับคำสั่งซื้อ — BODY SCENT</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .thankyou-section {
+      min-height: calc(100vh - 82px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: var(--space-lg) 0;
+    }
+
+    .thankyou-box {
+      max-width: 560px;
+      width: 100%;
+      margin: 0 auto;
+      background-color: var(--surface-white);
+      border: 1px solid var(--border-light);
+      padding: 4.5rem 3rem;
+      text-align: center;
+    }
+
+    .thankyou-mark {
+      width: 48px;
+      height: 48px;
+      border: 1px solid var(--accent-bronze);
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--accent-bronze);
+      font-family: var(--font-serif);
+      font-size: 1.35rem;
+      margin-bottom: 1.75rem;
+    }
+
+    .thankyou-box h1 {
+      font-size: clamp(2rem, 4vw, 2.75rem);
+      margin-bottom: 1rem;
+    }
+
+    .thankyou-box p {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      margin-bottom: 2.5rem;
+    }
+
+    @media (max-width: 768px) {
+      .thankyou-box {
+        padding: 3rem 1.75rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <a href="index.html" class="brand-logo">Body Scent</a>
+      <nav aria-label="เมนูหลัก">
+        <ul class="nav-links">
+          <li><a href="index.html">หน้าแรก</a></li>
+          <li><a href="product.html">คอลเลกชัน</a></li>
+          <li><a href="order.html">สั่งซื้อสินค้า</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="thankyou-section">
+      <div class="container">
+        <div class="thankyou-box">
+          <div class="thankyou-mark" aria-hidden="true">&#10003;</div>
+          <span class="eyebrow">Order Confirmed</span>
+          <h1>ขอบคุณสำหรับคำสั่งซื้อ</h1>
+          <p>
+            เราได้รับข้อมูลการสั่งซื้อของคุณเรียบร้อยแล้ว ทีมงานจะติดต่อกลับเพื่อยืนยันรายละเอียดและดำเนินการจัดส่งโดยเร็วที่สุด
+          </p>
+          <a href="index.html" class="btn">กลับหน้าแรก</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

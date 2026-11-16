@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>สั่งซื้อสินค้า — BODY SCENT</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .order-section {
+      padding: var(--space-lg) 0 var(--space-xl);
+    }
+
+    .order-card {
+      max-width: 640px;
+      margin: 0 auto;
+      background-color: var(--surface-white);
+      border: 1px solid var(--border-light);
+      padding: 3.5rem 3rem;
+    }
+
+    .order-card-header {
+      text-align: center;
+      margin-bottom: 2.5rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    .form-group {
+      margin-bottom: 1.75rem;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 0.78rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: var(--text-secondary);
+      margin-bottom: 0.6rem;
+    }
+
+    .form-control {
+      width: 100%;
+      padding: 0.9rem 1rem;
+      font-family: var(--font-sans);
+      font-size: 0.95rem;
+      font-weight: 300;
+      color: var(--text-primary);
+      background-color: var(--bg-primary);
+      border: 1px solid var(--border-light);
+      transition: var(--transition-smooth);
+      outline: none;
+    }
+
+    .form-control:focus {
+      border-color: var(--accent-bronze);
+      background-color: var(--surface-white);
+    }
+
+    textarea.form-control {
+      min-height: 100px;
+      resize: vertical;
+    }
+
+    .form-row-2 {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 1.25rem;
+    }
+
+    .form-actions {
+      margin-top: 2.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .form-actions .btn {
+      width: 100%;
+      padding: 1.05rem 2rem;
+    }
+
+    .back-link {
+      text-align: center;
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      letter-spacing: 0.08em;
+    }
+
+    .back-link:hover {
+      color: var(--accent-bronze);
+    }
+
+    @media (max-width: 768px) {
+      .order-card {
+        padding: 2.25rem 1.5rem;
+      }
+
+      .form-row-2 {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <a href="index.html" class="brand-logo">Body Scent</a>
+      <nav aria-label="เมนูหลัก">
+        <ul class="nav-links">
+          <li><a href="index.html">หน้าแรก</a></li>
+          <li><a href="product.html">คอลเลกชัน</a></li>
+          <li><a href="order.html" class="active">สั่งซื้อสินค้า</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="order-section">
+      <div class="container">
+        <div class="order-card">
+          <div class="order-card-header">
+            <span class="eyebrow">Order Placement</span>
+            <h2>แบบฟอร์มสั่งซื้อสินค้า</h2>
+            <p style="font-size: 0.9rem; color: var(--text-secondary);">
+              กรุณากรอกข้อมูลติดต่อและตรวจสอบรายการสินค้าด้านล่าง
+            </p>
+          </div>
+
+          <form id="orderForm">
+            <div class="form-group">
+              <label for="customerName">ชื่อลูกค้า *</label>
+              <input
+                type="text"
+                id="customerName"
+                name="customerName"
+                class="form-control"
+                placeholder="ระบุชื่อ - นามสกุล หรือชื่อเล่น"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="contact">เบอร์โทร / Line ID *</label>
+              <input
+                type="text"
+                id="contact"
+                name="contact"
+                class="form-control"
+                placeholder="เช่น 081-234-5678 หรือ Line: @yourid"
+                required
+              />
+            </div>
+
+            <div class="form-row-2">
+              <div class="form-group">
+                <label for="items">รายการสินค้า *</label>
+                <input
+                  type="text"
+                  id="items"
+                  name="items"
+                  class="form-control"
+                  placeholder="ระบุชื่อสินค้าและขนาด"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="total">จำนวนเงินรวม (บาท) *</label>
+                <input
+                  type="number"
+                  id="total"
+                  name="total"
+                  class="form-control"
+                  placeholder="0"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="note">หมายเหตุ (ที่อยู่จัดส่ง / รายละเอียดเพิ่มเติม)</label>
+              <textarea
+                id="note"
+                name="note"
+                class="form-control"
+                placeholder="ระบุที่อยู่สำหรับจัดส่ง หรือข้อความเพิ่มเติมถึงร้านค้า"
+              ></textarea>
+            </div>
+
+            <div class="form-actions">
+              <button type="submit" class="btn">ยืนยันสั่งซื้อ</button>
+              <a href="product.html" class="back-link">&larr; กลับไปเลือกสินค้าเพิ่มเติม</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="footer-brand">Body Scent</a>
+          <p style="max-width: 360px; font-size: 0.9rem;">
+            ผลิตภัณฑ์น้ำหอมฉีดตัวและโรลออนระงับกลิ่นกาย มอบความหอมเรียบหรูติดผิวยาวนานในราคาที่เข้าถึงได้
+          </p>
+        </div>
+        <div>
+          <h4 class="footer-heading">เมนูนำทาง</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">หน้าแรก</a></li>
+            <li><a href="product.html">สินค้าทั้งหมด</a></li>
+            <li><a href="order.html">แบบฟอร์มสั่งซื้อ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">กลิ่นหอมตามอารมณ์</h4>
+          <ul class="footer-links">
+            <li><a href="product.html?mood=fresh">Fresh Collection</a></li>
+            <li><a href="product.html?mood=sweet">Sweet Collection</a></li>
+            <li><a href="product.html?mood=confident">Confident Collection</a></li>
+            <li><a href="product.html?mood=romance">Romance Collection</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 BODY SCENT. All rights reserved.</span>
+        <span>Crafted with Subtle Elegance</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>คอลเลกชันสินค้า — BODY SCENT</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .catalog-header {
+      padding: var(--space-lg) 0 var(--space-md);
+      text-align: center;
+      border-bottom: 1px solid var(--border-light);
+      background-color: var(--bg-secondary);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <a href="index.html" class="brand-logo">Body Scent</a>
+      <nav aria-label="เมนูหลัก">
+        <ul class="nav-links">
+          <li><a href="index.html">หน้าแรก</a></li>
+          <li><a href="product.html" class="active">คอลเลกชัน</a></li>
+          <li><a href="order.html">สั่งซื้อสินค้า</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Page Header -->
+    <section class="catalog-header">
+      <div class="container">
+        <span class="eyebrow">The Collection</span>
+        <h1>ผลิตภัณฑ์ทั้งหมด</h1>
+        <p class="lead-text" style="margin: 0 auto;">
+          เลือกกลิ่นหอมและรูปแบบผลิตภัณฑ์ที่เหมาะกับตัวคุณ ทั้งสเปรย์น้ำหอมฉีดตัวขนาดพกพา ขนาดมาตรฐาน และโรลออนสูตรอ่อนโยน
+        </p>
+      </div>
+    </section>
+
+    <!-- Filter Bar & Product Grid (Rendered by script.js) -->
+    <section class="section">
+      <div class="container">
+        <div id="filter-bar" class="filter-group" aria-label="ตัวกรองตามอารมณ์กลิ่น"></div>
+        <div id="product-list" class="product-grid"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="footer-brand">Body Scent</a>
+          <p style="max-width: 360px; font-size: 0.9rem;">
+            ผลิตภัณฑ์น้ำหอมฉีดตัวและโรลออนระงับกลิ่นกาย มอบความหอมเรียบหรูติดผิวยาวนานในราคาที่เข้าถึงได้
+          </p>
+        </div>
+        <div>
+          <h4 class="footer-heading">เมนูนำทาง</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">หน้าแรก</a></li>
+            <li><a href="product.html">สินค้าทั้งหมด</a></li>
+            <li><a href="order.html">แบบฟอร์มสั่งซื้อ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">กลิ่นหอมตามอารมณ์</h4>
+          <ul class="footer-links">
+            <li><a href="product.html?mood=fresh">Fresh Collection</a></li>
+            <li><a href="product.html?mood=sweet">Sweet Collection</a></li>
+            <li><a href="product.html?mood=confident">Confident Collection</a></li>
+            <li><a href="product.html?mood=romance">Romance Collection</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 BODY SCENT. All rights reserved.</span>
+        <span>Crafted with Subtle Elegance</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

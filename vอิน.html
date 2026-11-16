@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BODY SCENT — Fragrance Crafted for Every Mood</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Page-specific Luxury Minimalist Layout for index.html */
+    .hero {
+      min-height: calc(100vh - 82px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: var(--space-xl) 0;
+      background: radial-gradient(circle at 50% 45%, var(--surface-white) 0%, var(--bg-primary) 65%, var(--bg-secondary) 100%);
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    .hero-content {
+      max-width: 780px;
+      margin: 0 auto;
+    }
+
+    .hero-divider {
+      width: 1px;
+      height: 54px;
+      background-color: var(--accent-bronze);
+      margin: 0 auto var(--space-md);
+      opacity: 0.75;
+    }
+
+    .hero h1 {
+      margin-bottom: var(--space-md);
+      font-weight: 400;
+    }
+
+    .hero h1 em {
+      font-style: italic;
+      color: var(--accent-bronze);
+    }
+
+    .hero .lead-text {
+      margin: 0 auto var(--space-lg);
+      font-size: 1.05rem;
+      line-height: 1.85;
+    }
+
+    .mood-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2rem;
+    }
+
+    .mood-card {
+      background-color: var(--surface-white);
+      border: 1px solid var(--border-light);
+      padding: 2.75rem 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: var(--transition-smooth);
+      position: relative;
+    }
+
+    .mood-card:hover {
+      border-color: var(--border-dark);
+      transform: translateY(-4px);
+    }
+
+    .mood-card-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 1.75rem;
+    }
+
+    .mood-index {
+      font-family: var(--font-serif);
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      letter-spacing: 0.1em;
+    }
+
+    .mood-card h3 {
+      font-size: 1.75rem;
+      letter-spacing: 0.03em;
+    }
+
+    .mood-card p {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      margin-bottom: 2.25rem;
+    }
+
+    .mood-explore {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: var(--text-primary);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .mood-card:hover .mood-explore {
+      color: var(--accent-bronze);
+    }
+
+    .philosophy-box {
+      max-width: 720px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .philosophy-quote {
+      font-family: var(--font-serif);
+      font-size: clamp(1.6rem, 2.8vw, 2.25rem);
+      font-style: italic;
+      color: var(--text-primary);
+      line-height: 1.45;
+      margin-bottom: var(--space-md);
+    }
+
+    @media (max-width: 992px) {
+      .mood-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        min-height: 82vh;
+        padding: var(--space-lg) 0;
+      }
+
+      .mood-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <a href="index.html" class="brand-logo">Body Scent</a>
+      <nav aria-label="เมนูหลัก">
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">หน้าแรก</a></li>
+          <li><a href="product.html">คอลเลกชัน</a></li>
+          <li><a href="order.html">สั่งซื้อสินค้า</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Full-Screen Luxury Hero Section -->
+    <section class="hero">
+      <div class="container hero-content">
+        <div class="hero-divider" aria-hidden="true"></div>
+        <span class="eyebrow">Signature Body Fragrance</span>
+        <h1>นิยามความหอมละมุน<br />ที่สะท้อน<em>ตัวตน</em>ในทุกวัน</h1>
+        <p class="lead-text">
+          รังสรรค์กลิ่นหอมอย่างพิถีพิถันเพื่อโอบกอดผิวอย่างนุ่มนวลและมีระดับ
+          เลือกสัมผัสที่สอดคล้องกับอารมณ์และจังหวะชีวิตของคุณในแบบที่เป็นธรรมชาติที่สุด
+        </p>
+        <a href="product.html" class="btn">ดูสินค้าทั้งหมด</a>
+      </div>
+    </section>
+
+    <!-- 4 Moods Exploration Section -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Curated Moods</span>
+          <h2>เลือกกลิ่นหอมตามอารมณ์ของคุณ</h2>
+          <p class="lead-text">
+            สี่เอกลักษณ์ความหอมที่ออกแบบมาเพื่อเติมเต็มบรรยากาศและบุคลิกเฉพาะตัวในแต่ละช่วงเวลา
+          </p>
+        </div>
+
+        <div class="mood-grid">
+          <!-- Mood 1: Fresh -->
+          <a href="product.html?mood=fresh" class="mood-card mood-fresh">
+            <div>
+              <div class="mood-card-header">
+                <span class="mood-index">01</span>
+                <span class="mood-dot"></span>
+              </div>
+              <h3>Fresh</h3>
+              <div class="mood-underline"></div>
+              <p>
+                ความหอมสะอาด โปร่งสบาย ดุจสายลมอ่อนยามเช้า มอบความรู้สึกสดชื่นและผ่อนคลายตลอดวัน
+              </p>
+            </div>
+            <span class="mood-explore">เลือกชมกลิ่นนี้ &rarr;</span>
+          </a>
+
+          <!-- Mood 2: Sweet -->
+          <a href="product.html?mood=sweet" class="mood-card mood-sweet">
+            <div>
+              <div class="mood-card-header">
+                <span class="mood-index">02</span>
+                <span class="mood-dot"></span>
+              </div>
+              <h3>Sweet</h3>
+              <div class="mood-underline"></div>
+              <p>
+                ความอ่อนหวานละมุนละไม นุ่มนวลอย่างมีชั้นเชิง ชวนให้นึกถึงความอบอุ่นที่พอดีไม่ฉุนจัด
+              </p>
+            </div>
+            <span class="mood-explore">เลือกชมกลิ่นนี้ &rarr;</span>
+          </a>
+
+          <!-- Mood 3: Confident -->
+          <a href="product.html?mood=confident" class="mood-card mood-confident">
+            <div>
+              <div class="mood-card-header">
+                <span class="mood-index">03</span>
+                <span class="mood-dot"></span>
+              </div>
+              <h3>Confident</h3>
+              <div class="mood-underline"></div>
+              <p>
+                ความสุขุม นุ่มลึก และสง่างาม สะท้อนภาพลักษณ์ที่มั่นใจและน่าเชื่อถือในทุกโอกาสสำคัญ
+              </p>
+            </div>
+            <span class="mood-explore">เลือกชมกลิ่นนี้ &rarr;</span>
+          </a>
+
+          <!-- Mood 4: Romance -->
+          <a href="product.html?mood=romance" class="mood-card mood-romance">
+            <div>
+              <div class="mood-card-header">
+                <span class="mood-index">04</span>
+                <span class="mood-dot"></span>
+              </div>
+              <h3>Romance</h3>
+              <div class="mood-underline"></div>
+              <p>
+                เสน่ห์ความหอมอันอบอุ่นและน่าค้นหา สร้างความประทับใจอันลึกซึ้งในช่วงเวลาสุดพิเศษ
+              </p>
+            </div>
+            <span class="mood-explore">เลือกชมกลิ่นนี้ &rarr;</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Brand Philosophy Section -->
+    <section class="section section-cream">
+      <div class="container">
+        <div class="philosophy-box">
+          <span class="eyebrow">The Essence of Subtlety</span>
+          <p class="philosophy-quote">
+            “ความหรูหราที่แท้จริงไม่จำเป็นต้องส่งเสียงดัง หากแต่เป็นกลิ่นหอมที่ตราตรึงอยู่ในความทรงจำอย่างแผ่วเบา”
+          </p>
+          <a href="product.html" class="btn btn-accent">สำรวจคอลเลกชัน</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="footer-brand">Body Scent</a>
+          <p style="max-width: 360px; font-size: 0.9rem;">
+            ผลิตภัณฑ์น้ำหอมฉีดตัวและโรลออนระงับกลิ่นกาย มอบความหอมเรียบหรูติดผิวยาวนานในราคาที่เข้าถึงได้
+          </p>
+        </div>
+        <div>
+          <h4 class="footer-heading">เมนูนำทาง</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">หน้าแรก</a></li>
+            <li><a href="product.html">สินค้าทั้งหมด</a></li>
+            <li><a href="order.html">แบบฟอร์มสั่งซื้อ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">กลิ่นหอมตามอารมณ์</h4>
+          <ul class="footer-links">
+            <li><a href="product.html?mood=fresh">Fresh Collection</a></li>
+            <li><a href="product.html?mood=sweet">Sweet Collection</a></li>
+            <li><a href="product.html?mood=confident">Confident Collection</a></li>
+            <li><a href="product.html?mood=romance">Romance Collection</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 BODY SCENT. All rights reserved.</span>
+        <span>Crafted with Subtle Elegance</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

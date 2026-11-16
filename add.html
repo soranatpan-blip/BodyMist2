@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>จัดการคำสั่งซื้อ — BODY SCENT Admin</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .admin-header {
+      padding: var(--space-lg) 0 var(--space-md);
+      border-bottom: 1px solid var(--border-light);
+      background-color: var(--bg-secondary);
+    }
+
+    .admin-header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+
+    .table-wrapper {
+      background-color: var(--surface-white);
+      border: 1px solid var(--border-light);
+      overflow-x: auto;
+    }
+
+    #ordersTable {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 0.9rem;
+    }
+
+    #ordersTable thead {
+      background-color: var(--bg-secondary);
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    #ordersTable th {
+      padding: 1.15rem 1.25rem;
+      font-family: var(--font-sans);
+      font-size: 0.75rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: var(--text-secondary);
+      white-space: nowrap;
+    }
+
+    #ordersTable td {
+      padding: 1.15rem 1.25rem;
+      border-bottom: 1px solid var(--border-light);
+      color: var(--text-primary);
+      vertical-align: top;
+    }
+
+    #ordersTable tbody tr:last-child td {
+      border-bottom: none;
+    }
+
+    #ordersTable tbody tr:hover {
+      background-color: var(--bg-primary);
+    }
+
+    @media (max-width: 768px) {
+      #ordersTable th,
+      #ordersTable td {
+        padding: 0.9rem 1rem;
+        font-size: 0.85rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <a href="index.html" class="brand-logo">Body Scent</a>
+      <nav aria-label="เมนูหลัก">
+        <ul class="nav-links">
+          <li><a href="index.html">หน้าแรก</a></li>
+          <li><a href="product.html">คอลเลกชัน</a></li>
+          <li><a href="order.html">สั่งซื้อสินค้า</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Admin Header -->
+    <section class="admin-header">
+      <div class="container admin-header-inner">
+        <div>
+          <span class="eyebrow">Store Management</span>
+          <h1 style="font-size: clamp(2rem, 3.5vw, 2.75rem);">รายการคำสั่งซื้อทั้งหมด</h1>
+        </div>
+        <button type="button" class="btn btn-sm" onclick="window.location.reload()">
+          รีเฟรชข้อมูล
+        </button>
+      </div>
+    </section>
+
+    <!-- Orders Table -->
+    <section class="section">
+      <div class="container">
+        <div class="table-wrapper">
+          <table id="ordersTable">
+            <thead>
+              <tr>
+                <th>วันเวลา</th>
+                <th>ชื่อลูกค้า</th>
+                <th>เบอร์โทร/Line</th>
+                <th>รายการสินค้า</th>
+                <th>จำนวนเงินรวม</th>
+                <th>หมายเหตุ</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom" style="padding-top: 0;">
+        <span>&copy; 2026 BODY SCENT — Order Administration</span>
+        <a href="index.html">กลับสู่หน้าเว็บไซต์หลัก &rarr;</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
